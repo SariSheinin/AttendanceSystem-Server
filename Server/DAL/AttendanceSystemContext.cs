@@ -10,5 +10,11 @@ namespace Server.DAL
          
         public DbSet<Employee> Employees { get; set; }
 
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=.;Database=AttendanceSystem;TrustServerCertificate=True;Trusted_Connection=True;");
+        }
+
     }
 }

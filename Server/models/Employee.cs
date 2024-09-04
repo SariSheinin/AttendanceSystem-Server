@@ -8,25 +8,25 @@ namespace Server.models
         [Key]
         [StringLength(9)]
         public string Id { get; set; }
-        [Required]
+        [Required()]
         [MaxLength(8)]
         public string Password { get; set; }
-        [Required]
+        [Required()]
         [MaxLength(50)]
 
         public string Name { get; set; }
-        [Required]
-        [Phone]
+        [Required()]
+        [Phone()]
         public string Phone { get; set; }
-        [Required]
+        [Required()]
         [EmailAddress]
         public string Email { get; set; }
-        [Required]
+        [Required()]
         public DateTime BirthDate { get; set; }
 
         [MaxLength(100)]
         public string Address { get; set; }
-        [Required]
+        [Required()]
         public int Role { get; set; }
     }
 }

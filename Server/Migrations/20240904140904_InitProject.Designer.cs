@@ -12,8 +12,8 @@ using Server.DAL;
 namespace Server.Migrations
 {
     [DbContext(typeof(AttendanceSystemContext))]
-    [Migration("20240811140319_firstq")]
-    partial class firstq
+    [Migration("20240904140904_InitProject")]
+    partial class InitProject
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
